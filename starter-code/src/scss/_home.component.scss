@@ -1,0 +1,35 @@
+.movie-item {
+  padding: 0 1px;
+  text-align: center;
+  h2 {
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    line-height: 30px;
+    &.sm-title {
+      font-size: .75em;
+    }
+  }
+  h3 {
+    font-weight: 100;
+    background: black;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+  .img {
+    img {
+      height: 547px;
+      object-fit: cover;
+    }
+  }
+  a {
+    display: block;
+    background: black;
+    padding: 10px 0;
+    color: white;
+    font-weight: 100;
+  }
+}

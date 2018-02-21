@@ -1,0 +1,88 @@
+<div class="container"  id="movie">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>
+        <small>Room {{actualMovie.room}}</small>{{actualMovie.title}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-wrap">
+        <img [src]="actualMovie.poster" [alt]="actualMovie.title"> </div>
+    </div>
+    <!-- genres -->
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Genres </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li *ngFor="let genre of actualMovie.genres">{{genre}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- year -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Year </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li>{{actualMovie.year}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- director -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Director </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li>{{actualMovie.director}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- actors -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Actors </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li *ngFor="let actor of actualMovie.actors">{{actor}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- schedule -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Hours </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li *ngFor="let hour of actualMovie.hours">{{hour}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- synopsis -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="detail-key"> Synopsis </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="detail-list">
+            <li>{{actualMovie.synopsis}}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- go back -->
+      <div class="row">
+        <div class="col-md-12">
+          <a [routerLink]="['/']">go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

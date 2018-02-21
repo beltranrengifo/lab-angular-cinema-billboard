@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm movie-item" *ngFor="let movie of moviesList">
+      <h3>ROOM {{movie.room}}</h3>
+      <div class="img">
+        <img [src]="movie.poster" alt=""> </div>
+      <h2 [ngClass]="{'sm-title': movie.title.length>22 }">{{movie.title}}</h2>
+      <div>
+        <a [routerLink]="['/movie/'+movie.id]">Watch this</a>
+      </div>
+    </div>
+  </div>
+</div>

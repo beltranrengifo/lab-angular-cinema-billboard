@@ -1,0 +1,40 @@
+#movie {
+  padding-bottom: 100px;
+  h1 {
+    padding-left: 10%;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    small {
+      font-weight: 100;
+      font-size: .6em;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  .img-wrap {
+    img {
+      height: 800px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .detail-key {
+    font-weight: 100;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding-bottom: 15px;
+  }
+  .detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px;
+  }
+  a {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 15px 50px;
+    font-size: .7em;
+  }
+}
