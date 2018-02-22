@@ -18,5 +18,4 @@ export class MovieComponent implements OnInit {
                 this.actualMovie = this.movies.getMovie(this.id)
               }
   ngOnInit() {}
-
 }
